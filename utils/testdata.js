@@ -1,0 +1,17 @@
+const users = {
+    validUser: {
+        username: 'standard_user',
+        password: 'secret_sauce',
+    },
+    lockedUser: {
+        username: 'locked_out_user',
+        password: 'secret_sauce',
+    },
+    invalidUser: {
+        username: 'wrong_user',
+        password: 'wrong_pass',
+    },
+
+}
+const apiBase  = 'https://jsonplaceholder.typicode.com';
+module.exports = { users, apiBase };
