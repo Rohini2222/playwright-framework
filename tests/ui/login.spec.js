@@ -8,7 +8,7 @@ test.describe('Login Tests - Sauce Demo', () => {
     await expect(page.locator('.title')).toHaveText('Products');
   });
 
-  test('Locked user sees error message', async ({ loginPage }) => {
+  test.only('Locked user sees error message', async ({ loginPage }) => {
     await loginPage.login(users.lockedUser.username, users.lockedUser.password);
     const error = await loginPage.getError();
     expect(error).toContain('locked out');
